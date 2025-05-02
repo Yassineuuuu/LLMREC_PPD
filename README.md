@@ -140,3 +140,43 @@ In your terminal, from the root folder `llmrec-replication/`, run:
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
+
+---
+## 🛠 Getting Started — How to Run This Project Locally
+
+Follow these instructions to install, run, and test the project environment easily.
+
+---
+
+### ✅ 1. Clone the repository
+
+```bash
+git clone https://github.com/<your-username>/llmrec-replication.git
+cd llmrec-replication
+
+##2- If using a virtual environnement
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+pip install -r requirements.txt
+
+
+##3- To lauch the scripts
+python3 scripts/preprocess.py
+python3 scripts/simulate_llm_augmentations.py
+python3 scripts/encode_features.py
+python3 scripts/evaluate.py
+
+##4- Launch Jupyter Notebook to execute the notebooks
+#in bash
+jupyter notebook
+#If Jupyter asks for a token, copy it from the terminal (look for token=... in the URL).
+
+
+#Then open notebooks on Jupyter and  the following notebooks :
+
+01_visualize_dataset.ipynb
+
+02_augmented_graph_demo.ipynb
+
+03_simulated_results.ipynb
